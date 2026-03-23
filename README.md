@@ -55,16 +55,22 @@ The skill uses a **usefulness-based inclusion rule** rather than a fixed cap per
 
 ## Installation
 
-### As a Claude Code skill
-
-Copy the `SKILL.md` file to your Claude Code skills directory:
+### Option 1: Git Clone (recommended)
 
 ```bash
-mkdir -p ~/.claude/skills/field-notes
-cp SKILL.md ~/.claude/skills/field-notes/
+git clone https://github.com/wentingwang21/field-notes.git ~/.claude/skills/field-notes
 ```
 
-The skill will be automatically available in Claude Code. Trigger it with phrases like:
+### Option 2: Manual
+
+Copy `SKILL.md` into your Claude Code skills folder:
+
+```
+~/.claude/skills/field-notes/
+└── SKILL.md
+```
+
+Once installed, the skill will be automatically available in Claude Code. Trigger it with phrases like:
 - "Write up my conference notes"
 - "Turn these notes into a document"
 - "Clean up my field notes"
