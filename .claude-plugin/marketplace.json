@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "field-notes",
+  "description": "Transform raw event notes and photos into polished, shareable documents — conferences, trade shows, workshops, site visits, and talks",
+  "owner": {
+    "name": "Wenting Wang"
+  },
+  "plugins": [
+    {
+      "name": "field-notes",
+      "description": "Transform raw, incomplete notes taken at real-world events into polished, ready-to-share documents. Accepts sparse notes and photos, detects event type, fetches official references, researches named entities, and generates elevated Markdown + styled HTML output with embedded photos and research panels.",
+      "source": "./",
+      "category": "productivity",
+      "skills": [
+        "./"
+      ],
+      "version": "1.0.0",
+      "author": {
+        "name": "Wenting Wang"
+      },
+      "homepage": "https://github.com/wentingwang21/field-notes",
+      "tags": ["notes", "conference", "field-notes", "documentation", "productivity"]
+    }
+  ]
+}

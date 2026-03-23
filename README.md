@@ -55,13 +55,21 @@ The skill uses a **usefulness-based inclusion rule** rather than a fixed cap per
 
 ## Installation
 
-### Option 1: Git Clone (recommended)
+### Option 1: Plugin Install (recommended)
+
+```
+/plugin marketplace add wentingwang21/field-notes
+```
+
+Then restart Claude Code. The skill will be available immediately.
+
+### Option 2: Git Clone
 
 ```bash
 git clone https://github.com/wentingwang21/field-notes.git ~/.claude/skills/field-notes
 ```
 
-### Option 2: Manual
+### Option 3: Manual
 
 Copy `SKILL.md` into your Claude Code skills folder:
 
