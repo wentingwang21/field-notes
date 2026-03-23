@@ -83,20 +83,20 @@ git clone https://github.com/wentingwang21/field-notes.git ~/.claude/skills/fiel
 
 If your Cursor uses a different skills path, put `SKILL.md` at `field-notes/SKILL.md` inside that folder.
 
-Once installed, the skill will be automatically available. Trigger it with phrases like:
-- "Write up my conference notes"
-- "Turn these notes into a document"
-- "Clean up my field notes"
-- "Notes from the trade show today"
+## Usage
 
-### As a standalone prompt
-
-You can also use `SKILL.md` as a system prompt or paste it into any Claude conversation to get the same behavior.
-
-## Example usage
+Once installed, the skill triggers automatically when you describe event notes. Just tell Claude what you have:
 
 ```
-You: Here are my notes from the AI Summit yesterday. Photos are in ~/Desktop/Photos-Summit/
+Write up my conference notes
+```
+
+```
+Turn these notes into a document — photos are in ~/Desktop/event-photos/
+```
+
+```
+Here are my notes from the AI Summit yesterday:
 
 Session 1: Opening keynote
 - CEO talked about AI agents replacing traditional search
@@ -108,11 +108,11 @@ Session 2: Panel on data strategy
 - interesting point about semantic layers
 ```
 
-The skill will:
-1. Read all photos and match them to sessions
-2. Search for the AI Summit agenda to get official session titles and speaker names
-3. Research named entities (Spotify's data strategy, semantic layers)
-4. Generate a polished Markdown + HTML report with photos, research panels, and next steps
+**What happens next:** The skill reads your notes and photos, detects the event type, fetches official references (agendas, speaker bios, company websites), researches named entities, and generates a polished Markdown + styled HTML report.
+
+**Trigger phrases:** "Write up my conference notes", "Turn these notes into a document", "Clean up my field notes", "Notes from the trade show today", or any similar phrasing that describes event notes.
+
+**As a standalone prompt:** You can also use `SKILL.md` as a system prompt or paste it into any Claude conversation.
 
 ## Output structure
 
