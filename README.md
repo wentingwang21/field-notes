@@ -2,6 +2,8 @@
 
 A Claude Code skill that transforms raw, incomplete notes taken at real-world events into polished, ready-to-share documents.
 
+![Demo — CX Circle EMEA 2026 conference summary in Warm Editorial style](demo.png)
+
 ## The problem it solves
 
 You were physically somewhere — a conference, trade show, workshop, site visit, or talk. You took sparse notes: a speaker name, a keyword, a photo of a slide. Now you need to turn those fragments into something others can read.
