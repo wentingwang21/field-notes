@@ -71,16 +71,19 @@ Then restart Claude Code. The skill will be available immediately.
 git clone https://github.com/wentingwang21/field-notes.git ~/.claude/skills/field-notes
 ```
 
-### Option 3: Manual
+### Cursor
 
-Copy `SKILL.md` into your Claude Code skills folder:
+This skill uses Claude Code's `WebSearch`, `WebFetch`, `Read`, `Write`, and `Bash` tools. Cursor supports these capabilities but behavior may vary depending on your Cursor configuration.
 
+**To install:**
+
+```bash
+git clone https://github.com/wentingwang21/field-notes.git ~/.claude/skills/field-notes
 ```
-~/.claude/skills/field-notes/
-└── SKILL.md
-```
 
-Once installed, the skill will be automatically available in Claude Code. Trigger it with phrases like:
+If your Cursor uses a different skills path, put `SKILL.md` at `field-notes/SKILL.md` inside that folder.
+
+Once installed, the skill will be automatically available. Trigger it with phrases like:
 - "Write up my conference notes"
 - "Turn these notes into a document"
 - "Clean up my field notes"
