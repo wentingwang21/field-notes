@@ -225,7 +225,13 @@ Use the Output Structures and Writing Guidelines below.
 
 After saving the Markdown, generate a polished HTML version saved alongside it as `[Event Name].html`.
 
-If photos are local file paths, keep them as relative paths. If the user needs a fully self-contained file (for email or Slack), use `Bash` with Python to base64-encode each image and inline it as a `data:image/jpeg;base64,...` src attribute.
+**Use the reusable builder** at `~/.claude/skills/field-notes/build_html.py`. Instead of writing a full HTML build script from scratch each time:
+
+1. Write a JSON config file to `/tmp/[event-slug]-config.json` containing all variable data: metadata (title, eyebrow, date, location, organiser, intro), photo_dir, sessions (with photos, bullets, research), themes, and actions.
+2. Run: `python3 ~/.claude/skills/field-notes/build_html.py /tmp/[event-slug]-config.json "[Event Name].html"`
+3. The builder handles all boilerplate: CSS for 4 style themes, HTML shell, style switcher, email template with download CTA, print styles, and photo base64 encoding.
+
+If photos are local file paths, the builder base64-encodes them for a self-contained file. Set `photo_dir` in the config to the corrected photos folder.
 
 Confirm the file was written and report its size.
 
