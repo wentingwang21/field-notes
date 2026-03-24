@@ -2,7 +2,14 @@
 
 A Claude Code skill that transforms raw, incomplete notes taken at real-world events into polished, ready-to-share documents.
 
-![Demo — CX Circle EMEA 2026 conference summary in Warm Editorial style](demo.png)
+### Header, key themes, and style switcher
+![Header and key themes — PMW Unlocked 2026 in Warm Editorial style](demo-header.png)
+
+### Session notes with research panel
+![Session detail — two-column layout with takeaways and further reading](demo-session.png)
+
+### Prioritised next steps
+![Next steps — actionable items with priority badges](demo-actions.png)
 
 ## The problem it solves
 
