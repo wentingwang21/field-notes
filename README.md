@@ -2,6 +2,15 @@
 
 A Claude Code skill that transforms raw, incomplete notes taken at real-world events into polished, ready-to-share documents.
 
+### Header, key themes, and style switcher
+![Header and key themes — PMW Unlocked 2026 in Warm Editorial style](demo-header.png)
+
+### Session notes with research panel
+![Session detail — two-column layout with takeaways and further reading](demo-session.png)
+
+### Prioritised next steps
+![Next steps — actionable items with priority badges](demo-actions.png)
+
 ## The problem it solves
 
 You were physically somewhere — a conference, trade show, workshop, site visit, or talk. You took sparse notes: a speaker name, a keyword, a photo of a slide. Now you need to turn those fragments into something others can read.
@@ -55,16 +64,33 @@ The skill uses a **usefulness-based inclusion rule** rather than a fixed cap per
 
 ## Installation
 
-### As a Claude Code skill
+### Option 1: Plugin Install (recommended)
 
-Copy the `SKILL.md` file to your Claude Code skills directory:
-
-```bash
-mkdir -p ~/.claude/skills/field-notes
-cp SKILL.md ~/.claude/skills/field-notes/
+```
+/plugin marketplace add wentingwang21/field-notes
 ```
 
-The skill will be automatically available in Claude Code. Trigger it with phrases like:
+Then restart Claude Code. The skill will be available immediately.
+
+### Option 2: Git Clone
+
+```bash
+git clone https://github.com/wentingwang21/field-notes.git ~/.claude/skills/field-notes
+```
+
+### Cursor
+
+This skill uses Claude Code's `WebSearch`, `WebFetch`, `Read`, `Write`, and `Bash` tools. Cursor supports these capabilities but behavior may vary depending on your Cursor configuration.
+
+**To install:**
+
+```bash
+git clone https://github.com/wentingwang21/field-notes.git ~/.claude/skills/field-notes
+```
+
+If your Cursor uses a different skills path, put `SKILL.md` at `field-notes/SKILL.md` inside that folder.
+
+Once installed, the skill will be automatically available. Trigger it with phrases like:
 - "Write up my conference notes"
 - "Turn these notes into a document"
 - "Clean up my field notes"
