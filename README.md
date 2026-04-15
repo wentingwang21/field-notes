@@ -66,11 +66,18 @@ The skill uses a **usefulness-based inclusion rule** rather than a fixed cap per
 
 ### Option 1: Plugin Install (recommended)
 
-```
-/plugin marketplace add wentingwang21/field-notes
+**Claude Code (plugin install):**
+```bash
+# Add the marketplace, then install the plugin
+claude plugin marketplace add wentingwang21/field-notes
+claude plugin install field-notes@field-notes
 ```
 
-Then restart Claude Code. The skill will be available immediately.
+Or from within a Claude Code session:
+```
+/plugin marketplace add wentingwang21/field-notes
+/plugin install field-notes@field-notes
+```
 
 ### Option 2: Git Clone
 
